@@ -1,0 +1,22 @@
+type ReceiveAccount {
+    id: ID
+    name: String
+    number: String
+    owner: String
+}
+
+type Query {
+    getAllAccounts: [ReceiveAccount]
+    getAccountById(id: ID): ReceiveAccount
+}
+
+type Mutation {
+    # Using an 'input' type for creation
+    addAccount(bankAccount: RequestAccount): ReceiveAccount
+}
+
+input RequestAccount {
+    name: String
+    number: String
+    owner: String
+}
