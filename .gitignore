@@ -36,8 +36,6 @@ buildNumber.properties
 .mvn/wrapper/maven-wrapper.jar
 
 # IDE
-.idea/
-*.iml
 *.ipr
 *.iws
 .vscode/
